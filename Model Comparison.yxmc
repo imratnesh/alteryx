@@ -1,0 +1,2162 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="637" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>error_measures</Name>
+          <Abbrev>E</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="590" width="108" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Error measures</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="606" y="484" width="96" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[predictions of each sample  ]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1566" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Report</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1482" y="846" width="47" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Report</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="126" y="815" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Models</Name>
+          <Abbrev>M</Abbrev>
+          <ShowFieldMap value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">svm_forest_boosted_donor_model.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>svm_forest_boosted_donor_model.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="1073741823" source="Formula: IF [Name] = &quot;random_forrest&quot; THEN &quot;random_forest&quot; &#xA;ELSE [Name] ENDIF" type="V_WString" />
+            <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="126" y="947" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Data</Name>
+          <Abbrev>D</Abbrev>
+          <ShowFieldMap value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">New_Donor_test.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (19)</Name>
+          <DefaultAnnotationText>New_Donor_test.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Donate" size="64" source="Formula: [Donate2]" type="String" />
+            <Field name="Degrees" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+            <Field name="First_Years" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+            <Field name="Last_Years" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+            <Field name="Undergraduate" size="64" source="Formula: IF [Undergradu] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+            <Field name="First_School" size="64" source="Formula: IF [First_School] == &quot;HK&quot; THEN &quot;PE&quot; ELSE [First_School] ENDIF" type="String" />
+            <Field name="Last_School" size="64" source="Formula: IF [Last_School] == &quot;CO&quot; THEN &quot;BU&quot; ELSE [Last_School] ENDIF" type="String" />
+            <Field name="Faculty_Staff" size="64" source="Formula: IF [Faculty_St] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+            <Field name="Intercollegiate" size="64" source="Formula: IF [Intercolle] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+            <Field name="Intramural" size="64" source="Formula: [Intramural2]" type="String" />
+            <Field name="Other_Activities" size="64" source="Formula: IF [Other_Acti] == 1 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" type="String" />
+            <Field name="Gender" size="64" source="Formula: [Gender2]" type="String" />
+            <Field name="Child" size="64" source="Formula: [Child2]" type="String" />
+            <Field name="Parent" size="64" source="Formula: [Parent2]" type="String" />
+            <Field name="Spouse" size="64" source="Formula: [Spouse2]" type="String" />
+            <Field name="Telephone" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+            <Field name="Mail" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+            <Field name="Personal" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+            <Field name="Combined" source="File: C:\Users\dputler\Dropbox\R_Commander\Windows_Packages\UBC.dbf" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="642" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>predictions</Name>
+          <Abbrev>P</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxRPluginGui.R">
+        <Position x="366" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RScript><![CDATA[# ========================================
+#   install 'ROCR', if it's not installed
+# ========================================
+
+repos <- c("http://cran.revolutionanalytics.com", "http://cran.rstudio.com")
+# Select a particular repository
+repo <- sample(repos, 1)
+#chooseCRANmirror(ind=1)
+is_installed <- function(mypkg) {
+  is.element(mypkg, installed.packages()[,1])
+}
+
+if (!is_installed('ROCR')) {
+  setInternet2(use = TRUE)
+  install.packages('ROCR', repos = repo)
+  setInternet2(use = FALSE)
+}
+
+
+# ====================================
+#          Helper functions
+# ====================================
+trim <- function (x) {
+  # Function to trim leading and trailing whitespace
+  #
+  # Parameters:
+  #   x : string
+  # Returns:
+  #   no_name: string without leading/trailing whitespace
+  gsub("^\\s+|\\s+$", "", x)
+}
+
+# === Global variables (optional) ===
+positive_class <- trim("%Question.target.level%")
+
+
+setPositiveClass <- function(tar_lev) {
+  # Set the postive class for two-class classification.
+  # The setPositiveClass function is only triggered if the user leaves the
+  # question on positive class (target level) blank.
+  #   1) if there's "yes/Yes/YES ..." in the target variable, then use "yes/Yes/YES"
+  #   2) if there's "true/True/TRUE..." in the target variable, then use "true/True/TRUE"
+  #   3) otherwise: use the first level by alphabetical order.
+  #
+  # Parameters:
+  #   tar_lev: a vector of string
+  #            the levels of the target variable.
+  #
+  # Returns:
+  #   no_name: a string, the name of the positive class.
+  yes_id <- match("yes", tolower(tar_lev))
+  true_id <- match("true", tolower(tar_lev))
+  if (!is.na(yes_id)) {
+    return (tar_lev[yes_id])
+  } else if (!is.na(true_id)) {
+    return (tar_lev[true_id])
+  } else {
+    return (tar_lev[1])
+  }
+}
+
+
+loadLibs <- function(model_classes){
+  # Only Load necessary libraries based on what models are used
+  #
+  # Parameters:
+  #   model_classes: string
+  #                  the classes of predictive models
+  #
+  # Returns:
+  #   None
+  if (any(model_classes == "gbm")) {
+    suppressWarnings(library("gbm"))
+  }
+  if (any(model_classes == "rpart")) {
+    suppressWarnings(library("rpart"))
+  }
+  if (any(model_classes == "svm.formula" | model_classes == "naiveBayes")) {
+    suppressWarnings(library("e1071"))
+  }
+  if (any(model_classes == "svyglm")) {
+    suppressWarnings(library("survey"))
+  }
+  if (any(model_classes == "nnet.formula")) {
+    suppressWarnings(library("nnet"))
+  }
+  if (any(model_classes == "randomForest.formula")) {
+    suppressWarnings(library("randomForest"))
+  }
+  if (any(model_classes == "earth")) {
+    suppressWarnings(library("earth"))
+  }
+}
+
+# gets the name of the target var from a model object
+targetName <- function(model_object) {
+  if (class(model_object) == "naiveBayes") {
+    return(model_object$yvars)
+  } else {
+    the_formula <- as.character(model_object$call[2])
+    form_split <- unlist(strsplit(the_formula, " ~ "))
+    form_split[1]
+  }
+}
+
+
+# The function getMeasuresRegression calculates standard error measures for a regression model
+getMeasuresRegression <- function(predicted, actual) {
+  err <- actual - predicted
+  rmse <- sqrt(mean(err*err))
+  mae <- mean(abs(err))
+  # When there are 0's in target variable, it can lead to divided by 0
+  # in this case use weighted version.
+  if (any(abs(actual) < 0.001)) {
+    AlteryxMessage("The target variable contains values very close to 0 (-0.001, 0.001), use WPE and WAPE instead of MPE and MAPE.", iType = 2, iPriority = 3)
+    mpe <- 100 * sum(err) / sum(actual)
+    mape <- 100 * sum(abs(err)) / sum(actual)
+  } else {
+    mpe <- 100*mean(err/actual)
+    mape <- 100*mean(abs(err/actual))
+  }
+
+  c(cor(predicted, actual), rmse, mae, mpe, mape)
+}
+
+
+getPredClass <- function(all_proba) {
+  # Get predicted classes based on predicted probabilities for each class
+  #
+  # Parameters:
+  #    all_proba: matrix of numeric with size = n_sample x n_class
+  #               Predicted probabilities of each class
+  # Returns:
+  #    this_pred: vector of factor with size = n_sample
+  #               Predicted class
+
+  if (is.null(colnames(all_proba))) {
+    this_pred <- apply(all_proba, 1, which.max)
+  } else {
+    c_names <- colnames(all_proba)
+    c_names <- sapply(c_names, function(x) substr(x,7,nchar(x)))
+    #Warnning: Hard code for "Score_" type column names
+    #potential bugs in the future!
+    this_pred <- c_names[apply(all_proba, 1, which.max)]
+  }
+  this_pred <- as.factor(this_pred)
+  return(this_pred)
+}
+
+
+getPrediction <- function(model_object, the_data, positive_class) {
+# Returns:
+#     Predicted probability for positive class
+#     Predicted class
+  pred_probas <- scoreModel(model_object, the_data)
+  new_positive_class <- paste("Score", positive_class, sep = '_')
+  pred_pos_proba <- pred_probas[,new_positive_class]
+  pred_class <- getPredClass(pred_probas)
+  return(list(pred_pos_proba = pred_pos_proba, pred_class = pred_class))
+}
+
+
+basicMeasuresClassification <- function(actual, pred) {
+  # Confusion Matrix
+  actual <- droplevels(actual)
+  pred <- droplevels(pred)
+
+	# Add the following to handle deprecated levels in either actual or pred.
+	if ( nlevels(actual) > nlevels(pred) ) {
+		levels(pred) <- levels(actual)
+	} else {
+		levels(actual) <- levels(pred)
+	}
+  conf_matrix <- as.data.frame.matrix(table(pred, actual))
+
+  m <- length(actual)
+
+  denom <- rowSums(conf_matrix)
+  num <- diag(as.matrix(conf_matrix))
+	#saveRDS(conf_matrix, "%Engine.WorkflowDirectory%conf_matrix.rds")
+  acc_by_class <- num / denom
+  acc <- sum(num) / m
+
+  tp <- conf_matrix[1,1]
+  fp <- conf_matrix[1,2]
+  tn <- conf_matrix[2,2]
+  fn <- conf_matrix[2,1]
+
+  # F1 Score
+  if (target_nlevels == 2) {
+    precision <- tp / (tp + fp)
+    recall <- tp / (tp + fn)
+  } else if (target_nlevels > 2) {
+    precision <- sum(acc_by_class) / target_nlevels
+    temp <- num / colSums(conf_matrix)
+    recall <- sum(temp) / target_nlevels
+  }
+  f1 <- 2 * precision * recall / (precision + recall)
+
+  names(acc_by_class) <- sapply(names(acc_by_class), function(x) { return(paste0('Accuracy_', x)) })
+  colnames(conf_matrix) <- sapply(colnames(conf_matrix), function(x){paste0("Actual_",x)})
+  rownames(conf_matrix) <- sapply(rownames(conf_matrix), function(x){paste0("Predicted_", x)})
+  return(c(list(Accuracy = acc), as.list(acc_by_class), list(F1 = f1, confmat = conf_matrix)))
+}
+
+# The function getMeasuresRegression calculates standard error measures for a classification model
+# NOTE:
+#     To be able to plot ROC, precision-recall plots, "probability = TRUE" must
+#     be enabled for the underline classification problem
+library(ROCR)
+rocrMeasuresClassification <- function(actual, pred_proba, pos = TRUE) {
+  # avoid bug, droplevels if actual/predicted are subsets from a vector with more levels
+  actual <- droplevels(actual)
+  #predicted <- droplevels(predicted)
+  if (nlevels(actual) == 2) {
+    true_y <- factor( TRUE*(actual == pos) ) # if levels are strings rather than TRUE/FALSE
+    pred <- prediction(pred_proba, true_y)
+
+    # =================================================================
+    # Quick Reference:
+    #       precision = tp / (tp + fp)
+    #          recall = tp / (tp + fn)
+    #             tpr = tp / (tp + fn)
+    #             fpr = fp / (fp + tn)
+    #              f1 = 2 * precision * recall / (precision + recall)
+    # ==================================================================
+
+    perf_acc <- performance(pred, "acc", "cutoff")
+    perf_lift <- performance(pred, "lift", "rpp")
+    perf_gain <- performance(pred, "tpr", "rpp")
+    perf_roc <- performance(pred, "tpr", "fpr")
+    perf_pr <- performance(pred, "prec", "rec")
+
+    auc <- performance(pred, "auc")
+    auc <- unlist(auc@y.values) # converting S4 class to scalar
+
+    f1 <- performance(pred, "f")
+    f1 <- unlist(f1@y.values) # converting S4 class to scalar
+
+    return(list(accuracy = perf_acc, lift = perf_lift, gain = perf_gain,
+                roc = perf_roc, pr = perf_pr, auc = auc, F1 = f1))
+
+  } else if (actual < 2){
+    stop.Alteryx("Error: Target variable has only one level!")
+  }
+}
+
+
+getMeasureClassification <- function(model_name, actual, pred_proba, pred_class, pos = TRUE) {
+  # Two-class Classification
+  if (target_nlevels <= 2) {
+    rocr_measures <- rocrMeasuresClassification(actual, pred_proba, pos)
+
+    # Write out the table of prediction measures to the first output
+    basic_measures <- basicMeasuresClassification(actual, pred_class)
+    these_measures <- cbind(data.frame(Model = model_name),
+                            basic_measures[1:length(basic_measures)-1],
+                            data.frame(AUC = rocr_measures$auc))
+    this_confmat <- basic_measures$confmat
+    these_plot_data <- list(lift = rocr_measures$lift, gain = rocr_measures$gain,
+                            roc = rocr_measures$roc, pr = rocr_measures$pr)
+
+    return(list(
+      these_measures = these_measures,
+      this_confmat = this_confmat,
+      these_plot_data = these_plot_data
+      ))
+  # Multi-class Classification
+  } else {
+     # Write out the table of prediction measures to the first output
+    basic_measures <- basicMeasuresClassification(actual, pred_class)
+    these_measures <- cbind(data.frame(Model = model_name),
+                            basic_measures[1:length(basic_measures)-1])
+    this_confmat <- basic_measures$confmat
+    return(list(
+      these_measures = these_measures,
+      this_confmat = this_confmat
+      ))
+  }
+
+}
+
+populateActualPred<- function(actual_pred, pred_class, model_name) {
+  column_names <- c(colnames(actual_pred), model_name)
+  actual_pred <- cbind(actual_pred, new = pred_class)
+  colnames(actual_pred) <- column_names
+  return(actual_pred)
+}
+
+populateMeasures <- function(the_measures, these_measures) {
+  return(rbind(the_measures, these_measures))
+}
+
+populateConfmat <- function(the_confmat, this_confmat, model_name) {
+  the_confmat[[model_name]] <- this_confmat
+  return(the_confmat)
+}
+
+
+populatePlotData <- function(the_plot_data, these_plot_data, model_name) {
+  the_plot_data[[model_name]] <- these_plot_data
+  return(the_plot_data)
+}
+
+
+# == Helper functions for plot
+getXY <- function(aa) {
+  xy <- list(x = unlist(aa@x.values), y = unlist(aa@y.values))
+  return(xy)
+}
+
+simplifyXY <- function(aa) {
+  return(lapply(aa, getXY))
+}
+
+
+# The following three functions are for setting proper xlim, ylim
+# limits for the plots. So parts of the plots won't get cutoff
+limitsHelper1 <- function(aa) {
+  xmin <- min(aa$x * is.finite(aa$x), na.rm = TRUE)
+  xmax <- max(aa$x * is.finite(aa$x), na.rm = TRUE)
+  ymin <- min(aa$y * is.finite(aa$y), na.rm = TRUE)
+  ymax <- max(aa$y * is.finite(aa$y), na.rm = TRUE)
+  return(c(xmin, xmax, ymin, ymax))
+}
+
+limitsHelper2 <- function(aa) {
+  return(lapply(aa, limitsHelper1))
+}
+
+getLimits <- function(aa) {
+  bb <- lapply(aa, limitsHelper2)
+  n <- length(aa)
+
+  out <- list()
+  #accuracy <- matrix(, nrow = n, ncol = 4)
+  lift <- matrix(, nrow = n, ncol = 4)
+  gain <- matrix(, nrow = n, ncol = 4)
+  roc <- matrix(, nrow = n, ncol = 4)
+  pr <- matrix(, nrow = n, ncol = 4)
+  for (i in 1:n) {
+    #accuracy[i, ] <- bb[[i]]$accuracy
+    lift[i, ] <- bb[[i]]$lift
+    gain[i, ] <- bb[[i]]$gain
+    roc[i, ] <- bb[[i]]$roc
+    pr[i, ] <- bb[[i]]$pr
+  }
+
+  #out$accuracy <- c(min(accuracy[,1]), max(accuracy[,2]), min(accuracy[,3]), max(accuracy[,4]))
+  out$lift <- c(min(lift[,1]), max(lift[,2]), min(lift[,3]), max(lift[,4]))
+  out$gain <- c(min(gain[,1]), max(gain[,2]), min(gain[,3]), max(gain[,4]))
+  out$roc <- c(min(roc[,1]), max(roc[,2]), min(roc[,3]), max(roc[,4]))
+  out$pr <- c(min(pr[,1]), max(pr[,2]), min(pr[,3]), max(pr[,4]))
+
+  return(out)
+}
+
+
+getPlots <- function(data, limits, type, n) {
+  colr <- palette()
+  if (type == "accuracy") {
+    plot(rep(0.5, 11), seq(0, 1, 0.1), main = "Probability cut-offs vs accuracy",
+         type = 'l', lty = 2, lwd = 1,
+         xlab = "Cutoff", ylab = "Accuracy",
+         xlim = limits$accuracy[1:2], ylim = limits$accuracy[3:4])
+    legend("topright", legend = names(data), lty = 1, lwd = 3, bty = 'n', col = colr[1:n])
+  }
+  if (type == "lift") {
+    plot(seq(0, 1, 0.1), rep(1, 11), main = "Lift curve",
+         type = 'l', lty = 2, lwd = 1,
+         xlab = "Rate of positive predictions", ylab = "Lift value",
+         xlim = limits$lift[1:2], ylim = limits$lift[3:4])
+    legend("topright", legend = names(data), lty = 1, lwd = 3, bty = 'n', col = colr[1:n])
+  }
+  if (type == "gain") {
+    plot(seq(0, 1, 0.1), seq(0, 1, 0.1), main = "Gain chart",
+         type = 'l', lty = 2, lwd = 1,
+         xlab = "Rate of positive predictions", ylab = "True positive rate",
+         xlim = limits$gain[1:2], ylim = limits$gain[3:4])
+    legend("bottomright", legend = names(data), lty = 1, lwd = 3, bty = 'n', col = colr[1:n])
+  }
+  if (type == "roc") {
+    plot(seq(0, 1, 0.1), seq(0, 1, 0.1), main = "ROC curve",
+         type = 'l', lty = 2, lwd = 1,
+         xlab = "False positive rate", ylab = "True positive rate",
+         xlim = limits$roc[1:2], ylim = limits$roc[3:4])
+    #legend("bottomright", legend = names(data), lty = 1, lwd = 3, bty = 'n', pt.cex = 0.5, col = colr[1:n])
+    legend("bottomright", legend = names(data), lty = 1, lwd = 3, bty = 'n', col = colr[1:n])
+  }
+  if (type == "pr") {
+    plot(0, main = "Precision and recall curve",
+         xlab = "Recall", ylab = "Precision",
+         xlim = limits$pr[1:2], ylim = limits$pr[3:4])
+    legend("topright", legend = names(data), lty = 1, lwd = 3, bty = 'n', pt.cex = 0.5, col = colr[1:n])
+  }
+
+  for (i in 1:n){
+    lines(data[[i]][[type]]$x, data[[i]][[type]]$y, lwd = 3, col = colr[i])
+  }
+
+}
+
+## =======================================================================##
+# The main macro script starts:
+## =======================================================================##
+if (AlteryxFullUpdate) {
+  out1_type <- "Double"
+  out1_size <- 8
+  measure_names <- c("Model", "Correlation", "RMSE", "MAE", "MPE", "MAPE", "type")
+  out2_type <- c("V_String", "Double", "Double", "Double", "Double", "Double", "V_String")
+  out2_size <- c(254, 8, 8, 8, 8, 8, 254)
+  # Add meta info for output 1
+  write.AlteryxAddFieldMetaInfo(nOutput = 1, name = "Actual", fieldType = out1_type, size = out1_size, source = "R-Data:")
+
+  # Add meta info for output 2
+  for (i in 1:length(measure_names)) {
+    write.AlteryxAddFieldMetaInfo(nOutput = 2, name = measure_names[i], fieldType = out2_type[i], size = out2_size[i], source = "R-Data:")
+  }
+
+  # Add meta info for output 3
+  write.AlteryxAddFieldMetaInfo(nOutput = 3, name = "Graph", fieldType = "V_WString", size = 1073741823, source = "R-Data:")
+
+  # Add meta infor for output 4
+  write.AlteryxAddFieldMetaInfo(nOutput = 4, name = "grp", fieldType = "V_WString", size = 1073741823, source = "R-Data:")
+  write.AlteryxAddFieldMetaInfo(nOutput = 4, name = "out", fieldType = "V_WString", size = 1073741823, source = "R-Data:")
+
+# if (AlteryxFullUpdate) {
+#   out1_size <- if (isRegression) 8 else 254
+#   out1_type <- if (isRegression) "Double" else "V_String"
+#   write.AlteryxAddFieldMetaInfo(nOutput = 1, name = "Actual", fieldType = out1_type, size = out1_size, source = "R-Data:")
+#     for (x in model_names) {
+#       write.AlteryxAddFieldMetaInfo(nOutput = 1, name = x, fieldType = out1_type, size = out1_size, source = "R-Data:")
+#     }
+} else{
+  # Read in the models and do error checking on the provided values
+  models_df <- read.Alteryx("#1")
+
+  if (names(models_df)[1] != "Name" || names(models_df)[2] != "Object") {
+    stop.Alteryx("The provided data does not appear to be a data stream of models")
+  }
+  model_names <- as.character(models_df$Name)
+  model_objects <- lapply(models_df$Object, function(x) unserializeObject(as.character(x)))
+  target_names <- sapply(model_objects, targetName)
+  if (!all(target_names == target_names[1])) {
+    stop.Alteryx("The target variables differ across the provided models")
+  }
+  allowed_classes <- c("glm", "svyglm", "negbin", "naiveBayes", "randomForest.formula", "rpart", "gbm", "lm", "rxLinMod", "rxDTree", "rxDForest", "earth", "svm.formula", "nnet.formula")
+  model_classes <- sapply(model_objects, function(x) class(x)[1])
+
+  # Load the needed packages given the set of models
+  loadLibs(model_classes)
+
+  allowed_models <- sapply(model_classes, function(x) x %in% allowed_classes)
+  num_wrong_class <- sum(as.numeric(!allowed_models))
+  if (num_wrong_class == 1) {
+    warning_str <- paste("The model ", model_names[!allowed_models],
+                        "is not of a recognized model class and will be ignored")
+  } else if (num_wrong_class > 1) {
+    warning_str <- paste("The models ", paste(model_names[!allowed_models], collapse = ", "),
+                        "are not of a recognized model class and will be ignored")
+  }
+  if (num_wrong_class >= 1) {
+    AlteryxMessage(warning_str, iType = 2, iPriority = 3)
+  }
+
+  model_names <- model_names[allowed_models]
+  model_objects <- model_objects[allowed_models]
+  num_models <- length(model_names)
+
+  # Read in the data and do error checking
+  the_data <- read.Alteryx("#2")
+  if (!any(names(the_data) %in% target_names[1])) {
+    stop.Alteryx("The provided data does not contain the target variable")
+  }
+
+  # == Read in the_target vector, decide what type of problem this is
+  #   1) Regression
+  #   2) 2-class Classification
+  #   3) multi-class Classification
+  the_target <- eval(parse(text = paste0('the_data[["', target_names[1], '"]]')))
+
+  all_vars <- c(target_names[1], unique(unlist(lapply(model_objects, getXVars))))
+  # Reduce the data down to only the needed fields, and avoid problems with
+  # missing values via na.omit
+  the_data <- na.omit(the_data[, all_vars, drop = FALSE])
+
+  if (class(the_target) == "factor") {
+    isRegression = FALSE
+  } else if (class(the_target) == "numeric" || class(the_target) == "integer") {
+    isRegression = TRUE
+  } else {
+    stop.Alteryx("The target variable needs to be either a continuous or factor type variable.")
+  }
+
+  if (isRegression) {
+    ## Get the predicted values and the fit measures for each model. NOTE: one
+    ## issue that needs to be addressed is missing values among the predictors. A
+    ## second is providing a smearing estimator of a natural log transformed target
+    # Address the first model before the others in order to initialize values
+
+    this_pred <- scoreModel(model_objects[[1]], new.data = the_data)[,]
+
+    actual_pred <- data.frame(Actual = the_target)
+    actual_pred [model_names[1]] <- this_pred
+    these_measures <- getMeasuresRegression(this_pred, the_target)
+    the_measures <- data.frame(Model = model_names[1], Correlation = these_measures[1], RMSE = these_measures[2], MAE = these_measures[3], MPE = these_measures[4], MAPE = these_measures[5])
+
+    # Loop through the other models, if they are present
+    if(num_models > 1) {
+      for(i in 2:num_models) {
+        #this_pred <- predict(model_objects[[i]], newdata = the_data)
+        this_pred <- scoreModel(model_objects[[i]], new.data = the_data)[,]
+        these_measures <- getMeasuresRegression(this_pred, the_target)
+        #AlteryxMessage(paste("[DB]: these_measures = ", these_measures))
+        new_measures <- data.frame(Model = model_names[i], Correlation = these_measures[1], RMSE = these_measures[2], MAE = these_measures[3], MPE = these_measures[4], MAPE = these_measures[5])
+        the_measures <- rbind(the_measures, new_measures)
+        #AlteryxMessage(paste("[DB]: the_measures = ", the_measures))
+        this_name <- model_names[i]
+        eval(parse(text = paste(this_name, "<- this_pred")))
+        actual_pred <- eval(parse(text = paste0("cbind(actual_pred, ", this_name, ")")))
+      }
+    }
+    # Add a column(field): type for the filter tool in later Alteryx workflow
+    the_measures <- cbind(the_measures, data.frame(type = '_regression_'))
+  } else {
+    # == Classification ==
+    target_nlevels <- nlevels(the_target)
+    if (nchar(positive_class) == 0) {
+      positive_class <- setPositiveClass(levels(the_target))
+    }
+
+    actual_pred <- data.frame(Actual = the_target)
+    the_measures <- data.frame()
+    the_confmat <- list()
+    the_plot_data <- list()
+    for (i in 1:num_models) {
+      my_pred <- getPrediction(model_objects[[i]], the_data, positive_class)
+      actual_pred <- populateActualPred(actual_pred, my_pred$pred_class, model_names[i])
+      err_measures <- getMeasureClassification(model_names[i], the_target, my_pred$pred_pos_proba, my_pred$pred_class, positive_class)
+      the_measures <- populateMeasures(the_measures, err_measures$these_measures )
+      the_confmat <- populateConfmat(the_confmat, err_measures$this_confmat, model_names[i])
+      the_plot_data <- populatePlotData(the_plot_data, err_measures$these_plot_data, model_names[i])
+    }
+
+    # Add a column(field): type for the filter tool in later Alteryx workflow
+    the_measures <- cbind(the_measures, data.frame(type = '_classification_'))
+  }
+
+
+  write.Alteryx(actual_pred, nOutput = 1)
+# }
+  write.Alteryx(the_measures, nOutput = 2)
+
+
+  ## Prepare plots (which may quickly be replaced by a dashboard)
+  AlteryxGraph(3)
+  # Regression
+  if (isRegression) {
+    # Sort the actual_pred table by the target values
+    actual_pred <- actual_pred[order(actual_pred$Actual),]
+    # Get the extremes values and create the plot canvas
+    min_val <- min(actual_pred)
+    max_val <- max(actual_pred)
+    main_title <- paste("Plot of Actuals and Predicted values for", target_names[1])
+    plot(c(min_val, max_val), c(min_val, max_val), type = "n", xlab = "Actual", ylab = "Predicted", main = main_title)
+    lines(actual_pred[[1]], actual_pred[[1]])
+    for (i in 1:num_models) {
+      points(actual_pred[[1]], actual_pred[[(i + 1)]], col = i)
+    }
+    legend(x = "topleft", legend = model_names, col = 1:num_models, pch = rep(1, num_models))
+    write.Alteryx(data.frame(grp = "_type_", out = "_regression_" ),  4)
+
+    # Two-class Classification
+  } else if (target_nlevels <= 2) {
+    simple_plot_data <- lapply(the_plot_data, simplifyXY)
+    limits <- getLimits(simple_plot_data)
+
+
+    #getPlots(simple_plot_data, limits, "accuracy", num_models)
+    getPlots(simple_plot_data, limits, "lift", num_models)
+    getPlots(simple_plot_data, limits, "gain", num_models)
+    getPlots(simple_plot_data, limits, "pr", num_models)
+    getPlots(simple_plot_data, limits, "roc", num_models)
+  }
+
+  # confusion matrices for either 2-class or multi-class classification
+  if (!isRegression) {
+    df2pipestr <- function(df) {
+      df <- cbind(' ' = rownames(df), df)
+      return(wrapTable(df, first.rnames = FALSE))
+    }
+
+    t1 <- lapply(the_confmat, df2pipestr)
+    t2 <- Map(function(x,n) {list(grp = n, out = x)}, t1, names(t1))
+    t3 <- lapply(t2, function(x) data.frame(grp = x$grp, out = x$out) )
+
+    write.Alteryx(do.call("rbind", t3), 4)
+  }
+}
+]]></RScript>
+          <UseFullUpdate value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field name="Actual" source="R-Data:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output2">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+            <Field name="type" size="254" source="R-Data:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output3">
+          <RecordInfo>
+            <Field name="Graph" size="1073741823" source="R-Data:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output4">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-Data:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-Data:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="761" y="779" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Model" selected="True" Alignment="Left" />
+            <Field name="Accuracy" selected="True" Alignment="Right" Places="4" Width="" />
+            <Field name="Accuracy_No" selected="True" Alignment="Right" Places="4" Width="" />
+            <Field name="Accuracy_Yes" selected="True" Alignment="Right" Places="4" Width="" />
+            <Field name="F1" selected="True" Alignment="Right" Places="4" Width="" />
+            <Field name="AUC" selected="True" Alignment="Right" Places="4" Width="" />
+            <Field name="*Unknown" selected="True" Alignment="Right" Places="4" Width="" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="875" y="779" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\cf1\b\f0\fs29 Fit and error measures\cf0\b0\f1\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" BackColor="#0080c0" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Fit and error measures</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="1470" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerGroup</GroupingMode>
+          <GroupingFields orderChanged="False">
+            <Field name="Group" />
+          </GroupingFields>
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="true" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Table" selected="True" Alignment="Center" Width="" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Group Of Records</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="893" y="1109" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="grp" action="GroupBy" rename="grp" />
+            <SummarizeField field="RecordID" action="Min" rename="Min_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="Summarize: GroupBy - grp" type="V_WString" />
+            <Field name="Min_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="grp" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="797" y="1109" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>1</StartValue>
+          <FieldName>RecordID</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="grp" size="1073741823" source="R-Data:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-Data:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="977" y="1109" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Min_RecordID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Min_RecordID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="Summarize: GroupBy - grp" type="V_WString" />
+            <Field name="Min_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Min_RecordID" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1081" y="1109" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Min_RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="Summarize: GroupBy - grp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1010" y="779" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Below</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green128\blue192;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs23 Model\cf2 :\fs29  \fs20 model names in the current comparison.\fs29\par
+\cf1\fs23 Accuracy\cf2 : \fs20 overall accuracy, number of correct predictions of all classes divided by total sample number.\cf1\fs29\par
+\fs23 Accuracy_[class name]\cf2 : \fs20 accuracy of Class [class name], number of samples that are \b correctly\b0  predicted to be Class [class name] divided by number of samples predited to be Class [class name]\par
+\cf1\fs23 AUC\cf2 : \fs20 area under the ROC curve, only available for two-class classification.\cf1\par
+\fs23 F1\cf2 :\fs20  F1 score, precision * recall / (precision + recall)\par
+\cf0\f1\fs29\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Model: model names in the curr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1156" y="779" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Group" type="String" size="64" expression="&quot;1_error_measures&quot;" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Group="1_error_measures"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="Group" size="64" source="Formula: &quot;1_error_measures&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="541" y="1097" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[out] = "_regression_"
+// Contains([grp],"")
+]]></Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>out</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>_regression_</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[out] = "_regression_"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-Data:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-Data:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-Data:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-Data:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="505" y="858" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[type] == '_regression_'</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[type] == '_regression_'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+            <Field name="type" size="254" source="R-Data:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+            <Field name="type" size="254" source="R-Data:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="769" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Model" selected="True" Alignment="Left" Width="" />
+            <Field name="Accuracy" selected="True" Alignment="Right" />
+            <Field name="Accuracy_No" selected="True" Alignment="Right" />
+            <Field name="Accuracy_Yes" selected="True" Alignment="Right" />
+            <Field name="F1" selected="True" Alignment="Right" />
+            <Field name="AUC" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" Places="4" Width="" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="889" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\cf1\b\f0\fs29 Fit and error measures\cf0\b0\f1\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" BackColor="#0080c0" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Fit and error measures</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1021" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Below</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green128\blue192;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs23 Model\cf2 :\fs29  \fs20 model names in the current comparison.\fs29\par
+\cf1\fs23 Correlation\cf2 : \fs20 <Link correlation|https://en.wikipedia.org/wiki/Correlation_and_dependence> between the predicted values and the actual values.\cf1\fs29\par
+\fs23 RMSE\cf2 : \fs20 <Link root mean square error|https://en.wikipedia.org/wiki/Root-mean-square_deviation>. \par
+\cf1\fs23 MAE\cf2 : \fs20 <Link mean absolute error|https://en.wikipedia.org/wiki/Mean_absolute_error>.\cf1\par
+\fs23 MPE\cf2 :\fs20  <Link mean percentage error|https://en.wikipedia.org/wiki/Mean_percentage_error>. Note: based on its definition, MPE may be positive or negative infinity if the target variable has 0 values. In this case, we return a weighted percentage error (WPE).\par
+\cf1\fs23 MAPE\cf2\fs20 : <Link mean absolute percentage error|https://en.wikipedia.org/wiki/Mean_absolute_percentage_error>. Note: based on its definition, MAPE may be positive or negative infinity if the target variable has 0 values. In this case, we return a weighted absolute percentage error (WAPE).\par
+  \par
+\par
+\cf0\f1\fs29\par
+\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Model: model names in the curr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="129">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1158" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Group" type="String" size="64" expression="&quot;1_error_measures&quot;" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Group="1_error_measures"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="Group" size="64" source="Formula: &quot;1_error_measures&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="130">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="633" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="type" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="131">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="637" y="779" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="type" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="132">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="541" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="type" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="133">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1014" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\qc\b\f0\fs36 Model Comparison Report\b0\f1\fs29\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Model Comparison Report</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="135">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1134" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Group" type="String" size="64" expression="&quot;0_title&quot;" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Group="0_title"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Group" size="64" source="Formula: &quot;0_title&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="140">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1146" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Group" type="String" size="64" expression="&quot;3_1plots&quot;" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Group="3_1plots"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Graph" size="1073741823" source="R-Data:" type="V_WString" />
+            <Field name="Group" size="64" source="Formula: &quot;3_1plots&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="144">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Graph" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" source="Summarize: Count - Graph" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1158" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Group" type="String" size="64" expression="&quot;3_0plots&quot;" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Group="3_0plots"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Group" size="64" source="Formula: &quot;3_0plots&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="808" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\cf1\b\f0\fs29  Performance Diagnostic Plots\cf0\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" BackColor="#0080c0" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ Performance Diagnostic Plots]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" source="Summarize: Count - Graph" type="Int64" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="136">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="690" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[Count] > 0 ]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[Count] > 0 ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Count" source="Summarize: Count - Graph" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Count" source="Summarize: Count - Graph" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="930" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="False" />
+            <SelectField field="Graph" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="145">
+      <GuiSettings>
+        <Position x="1182" y="1194" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (20)=grp
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output8">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+            <Field name="Group" size="64" source="Formula: &quot;2_&quot; + &quot;svm&quot;" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Confusion_Mat_Batch.yxmc" />
+    </Node>
+    <Node ToolID="147">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="516" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Alteryx Macro:
+Model Comparison</Text>
+          <Font name="Microsoft Sans Serif" size="18" style="0" />
+          <TextColor name="White" />
+          <FillColor r="95" g="152" b="171" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="152">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1350" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByPos</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+            <Connection>#3</Connection>
+            <Connection>#4</Connection>
+            <Connection>#5</Connection>
+            <Connection>#6</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="146">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="210" y="222" width="278" height="220" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Interface Tool</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="270" y="301" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>target.level</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="149">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="414" y="70" width="138.6955" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Module Description</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="148">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="424" y="99" width="217" height="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>The Model Comparison macro compares the performance of one or more different predictive models based on the use of a validation (or test) data set. It generates a report, a table of basic error measurements, and a table of prediction results for each model. The macros supports all binary classification (the case where the target variable has only two levels, or classes, such as "Yes" and "No"); multinomial classification (the case where the target variable has more than two levels or classes, such as "car", "bus", "train", and "airplane"); and regression (continuous target variable) models. The measures reported differ based on the type of models being compared.</Text>
+              <Font name="Microsoft Sans Serif" size="9.75" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="151">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="451.9999" y="104" width="98.89567" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Tools Used</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="150">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="461.9999" y="133" width="166.9999" height="228" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Macro Input
+R
+Summarize
+Select
+Filter
+Record ID
+Sort
+Formula
+Table
+Text
+Union
+Layout
+Confusion Matrix Batch
+Macro Output</Text>
+              <Font name="Microsoft Sans Serif" size="9.75" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="243" b="196" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output4" />
+      <Destination ToolID="124" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output1" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output2" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output2" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output3" />
+      <Destination ToolID="140" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output3" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="145" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="False" />
+      <Destination ToolID="145" Connection="Input7" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="135" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="140" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="145" Connection="Output8" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="False" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="True" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="False" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="126" Connection="Output" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="128" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Output" />
+      <Destination ToolID="129" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="131" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="132" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output" />
+      <Destination ToolID="136" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="True" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>target.level</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Model Comparison</Name>
+      <Description><![CDATA[This Macro is part of the Predictive District
+
+The Model Comparison macro compares the performance of one or more different predictive models based on the use of a validation (or test) data set. It generates a report, a table of basic error measurements, and a table of prediction results for each model. The macros supports all binary classification (the case where the target variable has only two levels, or classes, such as "Yes" and "No"); multinomial classification (the case where the target variable has more than two levels or classes, such as "car", "bus", "train", and "airplane"); and regression (continuous target variable) models. The measures reported differ based on the type of models being compared.
+
+To use this macro, and additional R packages (ROCR) needs to be installed.  The link below provides instructions on how to install R packages that can be accessed by Alteryx. The macro will attempt to install the needed R packages if they are not already installed, but this may be prevented by certain firewalls and proxy servers.
+]]></Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Predictive</CategoryName>
+      <SearchTags>predictive, macro, R, error measure, performance, lift chart, gain chart, ROC, PR, confusion matrix, RMSE</SearchTags>
+      <Author>Kuo Liu, Dan Putler</Author>
+      <Company>Alteryx Inc.</Company>
+      <Copyright>2016, Alteryx Inc.</Copyright>
+      <DescriptionLink actual="http://community.alteryx.com/t5/Alteryx-Knowledge-Base/Using-Additional-R-Packages-Times-Series-Clustering-Example/ta-p/4411" displayed="Using additional R packages" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (13)</Name>
+          <ToolId value="13" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (20)</Description>
+              <Name>Macro Input (20)</Name>
+              <ToolId value="20" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description><![CDATA[The positive class in target variable (binary classification only, optional) ]]></Description>
+              <Name>target.level</Name>
+              <ToolId value="35" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (45)</Description>
+              <Name>Macro Input (45)</Name>
+              <ToolId value="45" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (104)</Description>
+              <Name>Macro Output (104)</Name>
+              <ToolId value="104" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (106)</Name>
+              <ToolId value="106" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (18)</Description>
+              <Name>Macro Output (110)</Name>
+              <ToolId value="110" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="True" />
+      <MacroCustomHelpLink>http://help.alteryx.com/current/index.htm#Model_Comparison.htm</MacroCustomHelpLink>
+      <MacroDynamicOutputFields value="True" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="104" Selected="True" />
+        <Tool ToolId="110" Selected="True" />
+        <Tool ToolId="45" Selected="True" />
+        <Tool ToolId="20" Selected="True" />
+        <Tool ToolId="106" Selected="True" />
+        <Tool ToolId="145" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

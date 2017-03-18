@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="1108" height="669" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 30</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings>
+            <Position x="394" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="      " size="2048" source="CrossTab:Header:Header:1:Concat:" type="V_String" />
+                <Field name=" No " size="2048" source="CrossTab:Header:Header:2:Concat:" type="V_String" />
+                <Field name=" Yes " size="2048" source="CrossTab:Header:Header:3:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Pipe_to_Table.yxmc" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="562" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="      " selected="True" Alignment="Left" Width="" />
+                <Field name=" No " selected="True" Alignment="Left" />
+                <Field name=" Yes " selected="True" Alignment="Left" Width="" />
+                <Field name="*Unknown" selected="True" Alignment="Right" Width="" Places="0" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="--Verdana" Size="10" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="--Verdana" Size="12" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="274" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>grp</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>svm</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[grp] = "svm"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="grp" size="3" source="TextInput:" type="String" />
+                <Field name="out" size="17" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="grp" size="3" source="TextInput:" type="String" />
+                <Field name="out" size="17" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+            <Position x="330" y="133" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="236" y="253" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="1000" y="453" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output8</Name>
+              <Abbrev />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="562" y="572" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\cf1\b\f0\fs29 Confusion matrix of [Field1:A]\cf0\b0\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" BackColor="#0080c0" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Confusion matrix of [Field1:A]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field1" size="3" source="TextInput:" type="String" />
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="382" y="572" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Field1" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>svm</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field1" size="3" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="343" y="253" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="154" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Input7</Name>
+              <Abbrev>I</Abbrev>
+              <ShowFieldMap value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="3" />
+                  <Fields>
+                    <Field name="grp" />
+                    <Field name="out" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>svm</c>
+                      <c><![CDATA[      | No | Yes ]]></c>
+                    </r>
+                    <r>
+                      <c>svm</c>
+                      <c>No | 123 | 32</c>
+                    </r>
+                    <r>
+                      <c>svm</c>
+                      <c>Yes| 23 | 90</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="grp" size="3" source="TextInput:" type="String" />
+                <Field name="out" size="17" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="658" y="572" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Field1" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="751" y="453" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByPos</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#2</Connection>
+                <Connection>#1</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="646" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Table" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="448" y="253" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="858" y="453" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="Group" type="V_String" size="64" expression="&quot;2_&quot; + &quot;svm&quot;" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Group="2_" + "svm"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Table" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+                <Field name="Group" size="64" source="Formula: &quot;2_&quot; + &quot;svm&quot;" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="21" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="26" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="34" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Action" />
+      <Destination ToolID="19" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Action" />
+      <Destination ToolID="24" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="34" Connection="Action" />
+      <Destination ToolID="35" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (20)</Name>
+        <Value>grp</Value>
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Confusion_Mat_Batch</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="21" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>19/Simple/Operands/Operand</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="26" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>24/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="34" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>svm</ReplaceText>
+              <Destination>35/FormulaFields/FormulaField/@expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Model_name</Description>
+              <Name>Control Parameter (20)</Name>
+              <ToolId value="20" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (7)</Description>
+              <Name>Macro Input (29)</Name>
+              <ToolId value="29" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (8)</Description>
+              <Name>Macro Output (22)</Name>
+              <ToolId value="22" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="True" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AutoByName</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (20)</Name>
+            <Description>Model_name</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
